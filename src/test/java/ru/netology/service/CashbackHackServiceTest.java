@@ -1,7 +1,5 @@
 package ru.netology.service;
 
-import org.junit.Test;
-
 public class CashbackHackServiceTest {
 
     @org.junit.Test
@@ -54,12 +52,12 @@ public class CashbackHackServiceTest {
     }
 
 
-   // @org.junit.Test
-   // public void remain7() {
-      //  CashbackHackService service = new CashbackHackService();
-    //    int amount = 1000;
-     //   int expected = 1000;
-     //   int actual = service.remain(amount);
-      //  org.junit.Assert.assertEquals(actual, expected);
-    //}
+    @org.junit.Test
+    public void remain7() {
+        CashbackHackService service = new CashbackHackService();
+        int amount = 1000;
+        int expected = 0;
+        int actual = service.remain(amount);
+        org.junit.Assert.assertEquals(actual, expected);
+    }
 }
